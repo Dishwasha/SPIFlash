@@ -1,3 +1,5 @@
+#ifndef SPIFlash_cpp
+#define SPIFlash_cpp
 /* Audio Library for Teensy 3.X
  * Copyright (c) 2014, Pete (El Supremo), el_supremo@shaw.ca
  *
@@ -37,7 +39,7 @@
   
 */
 #include <SPI.h>
-#include "flashS25FL127_spi.h"
+#include <SPIFlash.h>
 
 static const uint8_t  f_cs=10; //chip select 
 
@@ -362,3 +364,5 @@ void flash_fast_read_pages(unsigned char *p,int pn,const int n_pages)
 //>>>PAH use DIV2 all the time so don't need this
 //  SPI.setClockDivider(SPI_CLOCK_DIV4);
 }
+
+#endif

@@ -105,7 +105,7 @@ It should report that everything is 255 because the sector
 // f.boesing
 
 #include <SPI.h>
-#include "flashS25FL127_spi.h"
+#include <SPIFlash.h>
 
 // Highest page number is 0xffff=65535
 int page_number = 0xFFFF;

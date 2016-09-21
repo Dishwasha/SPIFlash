@@ -24,8 +24,8 @@
  * THE SOFTWARE.
  */
 
-#ifndef flashS25FL127_h_
-#define flashS25FL127_h_
+#ifndef SPIFlash_h
+#define SPIFlash_h
 
 #include <stdint.h>
 #include <SPI.h>
@@ -41,7 +41,7 @@ void flash_init(void);
 void flash_hard_reset(void);
 void write_pause(void);
 
-class S25FL127class
+class SPIFlash
 {
 public:
 	void id(unsigned char *idt);
@@ -52,10 +52,6 @@ public:
 
 private:
 	uint8_t status(void);
-	
-
 };
-
-
 
 #endif
